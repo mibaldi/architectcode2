@@ -1,4 +1,9 @@
 package com.mibaldi.architectcoders2.data
 
-class PermissionChecker {
+
+interface PermissionChecker {
+
+    enum class Permission { COARSE_LOCATION }
+
+    fun check(permission: Permission): Boolean
 }
